@@ -1,0 +1,32 @@
+*{
+    font-size: 1.5rem;
+}
+
+header{
+    background-color: salmon;
+    width: auto;
+    height: 200px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    width: auto;
+    height: 200px;
+}
+
+
+footer{
+    background-color: blueviolet;
+    width: auto;
+    height: 200px;
+}
+
+.cuadro{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(226, 43, 43);
+}

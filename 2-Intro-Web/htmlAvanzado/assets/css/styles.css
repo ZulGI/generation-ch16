@@ -1,0 +1,38 @@
+
+
+ul {
+    list-style-type: square;
+}
+
+ol{
+    list-style-type: decimal;
+}
+
+.sub {
+    border: 3px dotted salmon;
+}
+
+h1{
+    background-color: coral;
+    width: fit-content;
+}
+
+div{
+    display: inline-block;
+    background-color: salmon;
+    width: 200px;
+}
+
+a{
+    display: inline-block;
+    background-color: rgb(173, 114, 250);
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(27, 155, 240);
+}
+span{
+    font-size: large;
+    font-family: cursive;
+    font-weight: 700;
+    border: 1px dashed palevioletred;
+}
