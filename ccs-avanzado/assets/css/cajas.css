@@ -1,0 +1,54 @@
+.cuadro{
+    height: 100px;
+    width: 100px;
+
+    /* margin es un espaciado externo */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+
+    margin: 20px 40px;
+
+    /* padding es un espaciado interno */
+    /* padding: 20px; */
+    padding: 50px 40px 30px 20px;
+
+    /* Hace una combinación entre línea y bloque */
+    /* display: inline-block; */
+
+    /* Pone un margen alrededor del bloque */
+    border: 10px solid yellow;
+
+    /* Para hacerlos en circulito */
+    /* border-radius: 50%; */
+    border-radius: 10px 20px 30px 40px;
+
+}
+.el-1{
+    background-color: blue;
+    /* position: fixed;
+    bottom: 0;
+    right: 0; */
+}
+.el-2{
+    background-color: rgb(0, 153, 255);
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    position: sticky;
+    top: 0;
+    
+}
+.el-3{
+    background-color: rgb(255, 0, 212);
+    /* position: relative;
+    bottom: 0px;
+    left: 100px; */
+}
+.el-4{
+    background-color: rgb(255, 0, 55);
+}
+.el-5{
+    background-color: rgb(0, 255, 34);
+}
