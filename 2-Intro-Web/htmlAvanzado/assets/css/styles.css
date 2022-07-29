@@ -2,6 +2,7 @@
 
 ul {
     list-style-type: square;
+
 }
 
 ol{
@@ -21,10 +22,11 @@ div{
     display: inline-block;
     background-color: salmon;
     width: 200px;
+    
 }
 
 a{
-    display: inline-block;
+    display: inline-block; 
     background-color: rgb(173, 114, 250);
     width: 200px;
     height: 50px;

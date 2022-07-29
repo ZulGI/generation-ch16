@@ -1,0 +1,74 @@
+.cuadro-padre{
+    background-color: blanchedalmond;
+
+    height: 500px;
+    
+    display: flex;
+
+    flex-direction: row;
+
+    /* Permite alinear de forma horizontal */
+    /* Recordar a word */
+    justify-content: space-between;
+
+    /* Nos permite alinear de forma vertical */
+    align-items: center;
+
+    
+}
+
+.cuadro{
+    height: 100px;
+    width: 100px;
+    margin: 20px 40px;
+    padding: 50px 40px 30px 20px;
+    border: 10px solid yellow;
+    border-radius: 10px 20px 30px 40px;
+    
+
+}
+.el-1{
+    background-color: blue;
+    align-self: flex-start;
+    flex-grow: 10;
+    
+}
+
+.el-2{
+    background-color: rgb(0, 153, 255);
+    flex-grow: 1;
+
+}
+
+.el-3{
+    background-color: rgb(255, 0, 212);
+    align-self: flex-end;
+    flex-grow: 1;
+}
+
+.el-4{
+    background-color: rgb(255, 0, 55);
+    flex-grow: 20;
+}
+
+.el-5{
+    background-color: rgb(0, 255, 34);
+}
+/* Introducción a Bootstrap */
+
+.contenedor{
+    height: 200px;
+    background-color: cyan;
+
+    max-width: 500px;
+
+    margin: 0 auto;
+}
+
+.fila{
+    display: flex;
+}
+
+.columna{
+    flex-grow: 1;
+}

@@ -1,4 +1,6 @@
 .cuadro{
+    /* 1rem = 16px el rem se modifica conforme al font size del html, dependen de la raíz*/
+    /* 1em = 16px las unidades no toman la unidad padtron de la raiz, toman la unidad del padre*/
     height: 100px;
     width: 100px;
 
@@ -27,28 +29,32 @@
 }
 .el-1{
     background-color: blue;
-    /* position: fixed;
-    bottom: 0;
-    right: 0; */
+    position: static;
 }
+
 .el-2{
     background-color: rgb(0, 153, 255);
-    /* position: absolute;
+    position: absolute;
     top: 0;
-    right: 0; */
-    position: sticky;
-    top: 0;
-    
+    right: 0; 
 }
+
 .el-3{
     background-color: rgb(255, 0, 212);
-    /* position: relative;
+    position: relative;
     bottom: 0px;
-    left: 100px; */
+    left: 100px;
 }
+
 .el-4{
     background-color: rgb(255, 0, 55);
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
+
 .el-5{
     background-color: rgb(0, 255, 34);
+    position: sticky;
+    top: 0;
 }
