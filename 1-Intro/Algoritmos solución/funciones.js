@@ -26,9 +26,9 @@ console.log("Sueldo mensual: " + (sueldo * diasSemana * semanasMes));
 return semanasMes;
 };
 
-/* let mes =calcularSueldo(100, 2)
+let mes =calcularSueldo(100, 2)
 
-calcularSueldo(100, 2)  */
+calcularSueldo(100, 2) 
 
 
 //console.log(mes);

@@ -47,4 +47,4 @@ console.log("Mi nombre es " + miNombre(nombres, apellidoPaterno, apellidoMaterno
 function miDivision(al, bl){
     return (al / bl)
 }
-console.log(miDivision(2938, 33));
+console.log("El resultado de la división es " + miDivision(2938, 33));

@@ -1,4 +1,4 @@
-/* let nombre = prompt("Escribe tu nombre")
+let nombre = prompt("Escribe tu nombre")
 console.log("Hola"(nombre));
 
 const sueldoD = 600;
@@ -11,13 +11,13 @@ let sueldoMensual = mes * sueldoSemanal
 
 console.log("Tu sueldo diario es $"(sueldoD));
 
-console.log("Tu sueldo semanal $"{sueldoSemanal});
+console.log("Tu sueldo semanal $"(sueldoSemanal));
 
-console.log("Tu sueldo mensual $"{sueldoMensual});
- */
+console.log("Tu sueldo mensual $"(sueldoMensual));
+
 //Reto
 
-let numero3 = parseInt(prompt("Escribe un número"));
+/* let numero3 = parseInt(prompt("Escribe un número"));
 console.log(numero3);
 
 if (numero3 / 7 && 8) {
@@ -25,4 +25,4 @@ if (numero3 / 7 && 8) {
 }
 else{
     console.log(false);
-}
+} */
