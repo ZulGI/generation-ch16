@@ -11,7 +11,7 @@ barco.push("Sara", "Agustin");
 barco.shift();
 console.log(barco);
 
-//parte 3
+//parte 3 
 /* Resulta que David estaba reservando un lugar para su amiga Renata. Ella aparece y va detrás de él en la fila. Aparece una persona más (Elena) y va hasta el final de la fila. ¿Cómo es la cola? */
 
 barco.splice(1, 0, "Renata");
