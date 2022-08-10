@@ -1,0 +1,19 @@
+.btn-michi{
+    font-family: cursive;
+    font-size: large;
+    margin: 0 auto;
+    display: block;
+    background-color: bisque;
+    color: blueviolet;
+    padding: 30px, 30px;
+    border: none;
+    border-radius: 5px;
+}
+#img-michi{
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
