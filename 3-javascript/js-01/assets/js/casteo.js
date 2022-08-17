@@ -37,3 +37,6 @@ console.log(typeof (num4));
 let num5 = Boolean();
 console.log(num5);
 console.log(typeof num5);
+
+let x = 6 + 3 +"3";
+console.log(x);
