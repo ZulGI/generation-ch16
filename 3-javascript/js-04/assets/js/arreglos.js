@@ -41,7 +41,7 @@ console.log(typeof (arreglo[4]));
 //Pop() //////////////////////////
 //Métodos para quitar elementos del final del areglo
 
-let dato1 = arreglo.pop()
+let dato1 = arreglo.pop();
 console.log(dato1);
 
 console.log(arreglo);
