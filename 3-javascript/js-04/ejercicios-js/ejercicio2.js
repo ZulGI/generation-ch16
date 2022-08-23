@@ -17,9 +17,11 @@
 
 /***************** Apuntes en clase ************************/
 
-for(let i=0; i<5; i++){
-  console.log("For principal" + i);
-  for(let j=0; j<10; j++){
-    console.log("For interno" + j);
+for(let i = 1; i < 6; i++){
+  let patron= ``;
+
+  for(let j = 0; j < i; j++){
+    patron = patron + "*";
   }
+  console.log(patron);
 }
