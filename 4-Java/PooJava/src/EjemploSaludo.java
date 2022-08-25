@@ -1,4 +1,4 @@
-public class EjemploSaldo {
+public class EjemploSaludo {
     public static void main(String[] args) {
         //Manera de declarar y construir de forma directa
         //Saludo objSaludo = new Saludo();
@@ -15,5 +15,11 @@ public class EjemploSaldo {
 
         System.out.println(objSaludo.saludar0());
         System.out.println("Este es otro objeto: ->" + objSaludo0.saludar0());
+        objSaludo.textoS = "Hola";
+
+        System.out.println("objSaludo = " + objSaludo);
+        
+        objSaludo0.a = 4;
+        System.out.println("objSaludo0 = " + objSaludo0);
     }
 }
