@@ -1,7 +1,9 @@
+package MiSaludo;
+
 public class EjemploSaludo {
     public static void main(String[] args) {
         //Manera de declarar y construir de forma directa
-        //Saludo objSaludo = new Saludo();
+        //MiSaludo.Saludo objSaludo = new MiSaludo.Saludo();
 
 
         //Declaración

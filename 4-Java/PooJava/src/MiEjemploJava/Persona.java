@@ -8,17 +8,36 @@ public class Persona {
 
     private int nss;
 
-    public Persona(String nombre, int edad, int nss) {
+
+    public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public void setNss(int nss) {
         this.nss = nss;
     }
 
-    void caminar(){
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public int getNss() {
+        return nss;
+    }
+
+    public void caminar(){
         System.out.println("Estoy caminando");
 
     }
-    void dormir(){
+    public void dormir(){
         System.out.println("Estoy durmiendo");
 
     }
