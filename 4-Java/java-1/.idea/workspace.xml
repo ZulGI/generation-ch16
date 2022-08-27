@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="120f1e46-22f9-4998-a4d3-8c30322ea9c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../PooJava.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../PooJava.rar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PooJava/out/production/PooJava/EjemploSaludo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PooJava/out/production/PooJava/Saludo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PooJava/src/EjemploSaludo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PooJava/src/MiSaludo/EjemploSaludo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PooJava/src/MiEjemploJava/EjemploPersona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PooJava/src/MiEjemploJava/EjemploPersona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PooJava/src/MiEjemploJava/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PooJava/src/MiEjemploJava/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PooJava/src/Saludo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PooJava/src/MiSaludo/Saludo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2-Intro-Web/pagina-bootstrap/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../2-Intro-Web/pagina-bootstrap/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PooJava/src/MiSaludo/EjemploSaludo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PooJava/src/MiSaludo/EjemploSaludo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +32,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

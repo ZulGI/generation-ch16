@@ -14,6 +14,7 @@ public class EjemploSaludo {
         objSaludo.saludar();
 
         Saludo objSaludo0 = new Saludo();
+        Saludo nuevoObj;
 
         System.out.println(objSaludo.saludar0());
         System.out.println("Este es otro objeto: ->" + objSaludo0.saludar0());
