@@ -11,6 +11,7 @@ public class EjemploHerencia {
     public static void main(String[] args) {
         Hija h = new Hija();
         h.visualizarA();
+
         Hijo ho = new Hijo();
         ho.setA(14689);
         ho.visualizarABC();
