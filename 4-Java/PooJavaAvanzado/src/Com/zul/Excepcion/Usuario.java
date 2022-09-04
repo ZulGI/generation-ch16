@@ -1,13 +1,13 @@
 package Com.zul.Excepcion;
 
 public class Usuario {
-        private String usrname;
+        private String username;
         private String password;
         private String nombre;
         private String email;
 
-        public String getUsrname() {
-            return usrname;
+        public String getUsername() {
+            return username;
         }
 
         public String getPassword() {
@@ -22,8 +22,8 @@ public class Usuario {
             return email;
         }
 
-        public void setUsrname(String usrname) {
-            this.usrname = usrname;
+        public void setUsername(String username) {
+            this.username = username;
         }
 
         public void setPassword(String password) {
