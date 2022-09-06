@@ -1,22 +1,27 @@
-CREATE DATABASE tienda; 
 USE tienda;
 
-CREATE TABLE clientes (
-client_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-nombre CHAR(50) NOT NULL,
-apellido CHAR(50) NOT NULL, 
-telefono CHAR(50) NOT NULL, 
-direccion VARCHAR(150) NOT NULL);
+SELECT * FROM clientes;
 
-INSERT INTO clientes (nombre, apellido, telefono, direccion)
-VALUES('Pedro', 'Paramo', '5576231829', 'Comala'),
-('Raul', 'Sanchez', '5576231239', 'Comala'),
-('Victor', 'Fernandez', '5576231845', 'Comala');
+CREATE TABLE compra (
+orden_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+cliente_id INT NOT NULL,
+fecha_compra DATE NOT NULL,
+total DECIMAL(5,2) NOT NULL,
+cantidad_productos INT NOT NULL
+);
 
-SELECT * FROM tienda.clientes;
+SELECT * FROM compra;
 
-DELETE FROM clientes
-WHERE cliente_id =13;
+-- Agregar llave foránea 
+ALTER TABLE compra
+ADD CONSTRAINT fk_clientes_compra
+FOREIGN KEY (cliente_id)
+REFERENCES clientes (cliente_id);
 
-DELETE FROM clientes
-WHERE nombre ='Pedro';
+-- Borrar llave foránea 
+
+ALTER TABLE compra
+DROP FOREIGN KEY fk_clientes_compra;
+
+INSERT INTO compra(cliente_id, fecha_compra, total, cantidad_productos)
+values (1, '2022-09-06', 300.50, 2);
