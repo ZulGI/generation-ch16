@@ -24,4 +24,4 @@ ALTER TABLE compra
 DROP FOREIGN KEY fk_clientes_compra;
 
 INSERT INTO compra(cliente_id, fecha_compra, total, cantidad_productos)
-values (1, '2022-09-06', 300.50, 2);
+values (9, '2022-09-07', 100, 1);
