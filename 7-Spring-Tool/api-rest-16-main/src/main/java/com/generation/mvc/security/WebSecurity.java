@@ -14,8 +14,8 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import static com.generation.mvc.security.Constants.HEADER_AUTHORIZACION_KEY;
-import static com.generation.mvc.security.Constants.LOGIN_URL;
+import static com.generation.mvc.security.Constans.HEADER_AUTHORIZACION_KEY;
+import static com.generation.mvc.security.Constans.LOGIN_URL;
 
 @Configuration
 @EnableWebSecurity
@@ -47,6 +47,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .authorizeRequests().antMatchers(HttpMethod.POST, LOGIN_URL).permitAll()
                 .antMatchers(HttpMethod.POST, "/usuario").permitAll()
+                .antMatchers(HttpMethod.GET, "/usuario/*").permitAll()
                 .antMatchers(HttpMethod.POST, "/post").permitAll() 
                 .antMatchers(HttpMethod.GET, "/").permitAll()
                 .anyRequest().authenticated().and()

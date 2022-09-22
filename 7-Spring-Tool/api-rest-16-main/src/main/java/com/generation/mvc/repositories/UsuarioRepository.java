@@ -9,7 +9,6 @@ import com.generation.mvc.models.UsuarioModel;
 
 @Repository
 public interface UsuarioRepository extends CrudRepository<UsuarioModel, Long> {
-	
 	public abstract ArrayList<UsuarioModel> findByPrioridad(Integer prioridad);
 	
 	UsuarioModel findByNombre(String nombre);

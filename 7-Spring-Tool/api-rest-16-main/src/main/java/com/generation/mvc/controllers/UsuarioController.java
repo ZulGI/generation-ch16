@@ -3,6 +3,7 @@ package com.generation.mvc.controllers;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import com.generation.mvc.models.UsuarioModel;
@@ -12,9 +13,22 @@ import com.generation.mvc.services.UsuarioService;
 @RestController
 @RequestMapping("/usuario")
 public class UsuarioController {
-
-	@Autowired
-	UsuarioService usuarioService;
+	
+	//Inyeccion por campos
+	//@Autowired
+	//UsuarioService usuarioService;
+	
+	//Inyeccion de dependencias por constructor
+	//El final sirve para usarlo como constante
+	private final UsuarioService usuarioService;
+	private final BCryptPasswordEncoder bCryptPasswordEncoder;
+	
+	//Ver opciones ctrl + espacio
+	public UsuarioController(@Autowired UsuarioService usuarioService, @Autowired BCryptPasswordEncoder bCryptPasswordEncoder) {
+		// TODO Auto-generated constructor stub
+		this.usuarioService = usuarioService;
+		this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+	}
 	
 	//obtener todos los usuarios
 	@GetMapping() // http://localhost:8080/usuario
@@ -30,13 +44,14 @@ public class UsuarioController {
 	//Buscar por prioridad   
 	@GetMapping("/query")  // http://localhost:8080/usuario/query?prioridad=4
 	public ArrayList<UsuarioModel> obtenerUsuarioPorPrioridad(@RequestParam("prioridad") Integer prioridad){
-        return this.usuarioService.obtenerPorPrioridad(prioridad);
+		return this.usuarioService.obtenerPorPrioridad(prioridad);
     }
 
 	
 	@PostMapping()  // http://localhost:8080/usuario
 	public UsuarioModel guardarUsuario(@RequestBody UsuarioModel usuario){
-        return usuarioService.guardarUsuario(usuario);
+        usuario.setPassword(bCryptPasswordEncoder.encode(usuario.getPassword()));
+		return usuarioService.guardarUsuario(usuario);
     }
 
 	// Editar usuario
@@ -50,11 +65,12 @@ public class UsuarioController {
 		public String eliminarPorId(@PathVariable("id") Long id){
         boolean ok = this.usuarioService.eliminar(id);
         if (ok){
-            return "Se eliminó el usuario con id " + id;
+            return "Se eliminï¿½ el usuario con id " + id;
         }else{
             return "No pudo eliminar el usuario con id " + id;
         }
     }
+	
 	
 	
 

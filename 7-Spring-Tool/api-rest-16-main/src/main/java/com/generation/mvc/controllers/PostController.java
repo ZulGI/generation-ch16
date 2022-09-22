@@ -23,17 +23,17 @@ public class PostController {
 	private PostService postService;
 	
 	// obtener todos los posts
-	@GetMapping() // http://localhost:8080/post
+	@GetMapping() // http://localhost:8080/posts
 	public ArrayList<PostModel> obtenerPosts() {
 		return postService.obtenerPosts();
 	}
 
-	@GetMapping("/{id}") // http://localhost:8080/post/1
+	@GetMapping("/{id}") // http://localhost:8080/posts/1
 	public PostModel getPost(@PathVariable Long id) {
 		return postService.obtenerPost(id);
 	}
 
-	@PostMapping() // http://localhost:8080/post
+	@PostMapping() // http://localhost:8080/posts
 	public PostModel guardarPost(@RequestBody PostModel postModel) {
 		return postService.guardarPost(postModel);
 	}

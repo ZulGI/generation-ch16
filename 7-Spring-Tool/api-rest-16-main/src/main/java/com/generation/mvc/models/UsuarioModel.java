@@ -13,12 +13,13 @@ public class UsuarioModel {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(nullable = false)
 	private Long id;
+	
+	@Column(unique = true)
 	private String nombre;
 	private String correo;
 	private Integer prioridad;
-	
 	@Column(nullable = false)
-	private String Password;
+	private String password;
 	
 	@OneToMany(mappedBy = "user")
     private List<PostModel> posts;
@@ -59,11 +60,11 @@ public class UsuarioModel {
 	}
 
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
 
 	public List<PostModel> getPosts() {
@@ -81,5 +82,8 @@ public class UsuarioModel {
 	public void setDireccion(DireccionModel direccion) {
 		this.direccion = direccion;
 	}
+	
+	
 
+	
 }
